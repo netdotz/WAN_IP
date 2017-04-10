@@ -6,4 +6,4 @@ Designed and released as a sample or module. To create persistent record of Dyna
  
 Requires - python or python3, with module built-ins for "bs4" to support BeautifulSoup
 apt-get install python-bs4, apt-get install python3-bs4, pip install bs4, pip3 install bs4;
-apt-get install python-html5lib, apt-get install python3-html5lib, pip install python-html5lib, pip3 install python3-html5lib
+apt-get install python-html5lib, apt-get install python3-html5lib, pip install python-html5lib
