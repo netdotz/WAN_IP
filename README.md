@@ -5,4 +5,5 @@ Initial wanip.py - simplified to return a Wide Area Network I.P. Address and Tim
 Designed and released as a sample or module. To create persistent record of Dynamic Addressing Space from I.S.P.'s. To be set as a usable or sample module as part of a larger framework.
  
 Requires - python or python3, with module built-ins for "bs4" to support BeautifulSoup
-apt-get install python-bs4, apt-get install python3-bs4, pip install bs4, pip3 install bs4
+apt-get install python-bs4, apt-get install python3-bs4, pip install bs4, pip3 install bs4;
+apt-get install python-html5lib, apt-get install python3-html5lib, pip install python-html5lib, pip3 install python3-html5lib
