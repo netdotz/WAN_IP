@@ -15,7 +15,7 @@ def main(tmp_space, pull_wanip):
 def rec_data(file_space, wanip):
     persist_file = open(file_space, 'w')
     persist_file.write('#NEW_RECORD'+'\n')
-    persist_file.write(('#TIMESTAMP')+str(time.ctime())+'\n')
+    persist_file.write(('#TIMESTAMP ')+str(time.ctime())+'\n')
     persist_file.write(wanip)
     persist_file.close()
 
