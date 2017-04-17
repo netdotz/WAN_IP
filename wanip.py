@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-##PULL_WAN_IP
+##PULL_WAN_IP can include on line one (optional) - #!/usr/bin/env python3
 
 import bs4, os, sys, time
 from bs4 import BeautifulSoup
@@ -14,15 +13,15 @@ def main(tmp_space, pull_wanip):
 
 def rec_data(file_space, wanip):
     persist_file = open(file_space, 'w')
-    persist_file.write('#NEW_RECORD'+'\n')
-    persist_file.write(('#TIMESTAMP ')+str(time.ctime())+'\n')
-    persist_file.write(wanip)
+    #persist_file.write('#NEW_RECORD'+'\n') #Uncomment to include New Record REM
+    #persist_file.write(('#TIMESTAMP ')+str(time.ctime())+'\n') #Uncomment to include Timestamp
+    persist_file.write(wanip) #IP ADDRESS VARIABLE
     persist_file.close()
 
 if __name__ == '__main__':
     pull_wanip = 'http://ip-address.org'
-    tmp_space = '/tmp/wanip.tmp'
-    file_space = '/tmp/data.ip'
+    tmp_space = '/tmp/wanip.tmp' #can remain /tmp/
+    file_space = '/tmp/data.ip' #change to desired /dir/space/data.ip
     gets = ('wget -S '+pull_wanip+' -O '+tmp_space)
     os.system(gets)
     wanip = main(tmp_space, pull_wanip)
